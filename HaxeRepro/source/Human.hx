@@ -1,4 +1,4 @@
-import lib1.inheritance.Mammal;
+import lib2.inheritancetest.Mammal;
 
 class Human extends Mammal
 {
