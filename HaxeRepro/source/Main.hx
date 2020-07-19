@@ -3,7 +3,7 @@ import js.Browser;
 class Main {
 	static function main() {
 		trace("test");
-		var a:Int = 14;
+		var a:Int = 4;
 		var b:Int = 5;
 		var c:Float = a + b;
 		c = c + 2;
