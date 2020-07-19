@@ -1,6 +1,6 @@
 package lib2.inheritancetest;
 
-import lib1.inheritancetest;
+import lib1.inheritancetest.Animal;
 
 class Mammal extends Animal
 {
