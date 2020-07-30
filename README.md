@@ -10,5 +10,6 @@ A project that demonstrates the Haxe tech stack using VS Code and multiple targe
 
 # Current issues
 
-- Despite Lib1 and Lib2 being specified in `build.hxml`, cannot compile `Human.hx`.
-- No navigation available among the files of the project.
+- No recompilation on Haxe files changes.
+- No live reload in browser.
+- Even on normal refresh, the browser still shows the old code, until a hard refresh is used.
