@@ -10,8 +10,9 @@ class Main {
 		c = c * 4;
 		c = c / 3;
 
-		var h:Human = new Human("Bob", 12, false, "Fisherman");
+		var h:Human = new Human("Bob123", 11, false, "Fisherman");
 
-		Browser.alert("Result is " + c + "\r\nHuman is: " + h);
+		// Browser.alert();
+		Browser.document.write("</br>Result is " + c + "\r\nHuman is: " + h);
 	}
 }

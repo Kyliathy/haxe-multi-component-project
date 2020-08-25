@@ -9,7 +9,7 @@ class Animal
 	public function new(name: String, age: Int, female: Bool)
 	{
 		this.name = name;
-		this.age = age;
+		this.age = age + 5;
 		this.female = female;
 	}
 }

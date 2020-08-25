@@ -1,8 +1,21 @@
 {
-	"devDependencies": {
-		"lix": "^15.8.9"
-	},
-	"scripts": {
-		"postinstall": "lix download"
-	}
+  "name": "hmc-client",
+  "version": "0.0.1",
+  "description": "Client for the Haxe Multi Component project",
+  "main": "index.js",
+  "config": {
+    "gamemodule": "HaxeRepro"
+  },
+  "scripts": {
+    "task": "node scripts/tasksfile.js",
+    "watch": "npx cross-var task watch:start $npm_package_config_gamemodule",
+    "dev": "npx cross-var task dev:start"
+  },
+  "author": "Haxe Community",
+  "license": "ISC",
+  "dependencies": {
+    "fast-live-reload": "^2.10.0",
+    "onchange": "^7.0.2",
+    "tasksfile": "^5.1.1"
+  }
 }

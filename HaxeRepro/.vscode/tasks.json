@@ -1,104 +1,48 @@
 {
-	"version": "2.0.0",
-	"tasks": [
-		{
-			"type": "haxe",
-			"args": "active configuration",
-			"group": {
-				"kind": "build",
-				"isDefault": true
-			}
-		},
-		{
-			"label": "Flash (debug)",
-			"type": "shell",
-			"command": "npx",
-			"args": [
-				"haxe",
-				"build.hxml",
-				"-swf",
-				"export/run.swf",
-				"-D",
-				"fdb"
-			],
-			"problemMatcher": [
-				"$haxe-absolute",
-				"$haxe",
-				"$haxe-error",
-				"$haxe-trace"
-			]
-		},
-		{
-			"label": "JS (debug)",
-			"type": "shell",
-			"command": "npx",
-			"args": [
-				"haxe",
-				"build.hxml",
-				"-js",
-				"export/run.js",
-				"-lib",
-				"hxnodejs"
-			],
-			"problemMatcher": [
-				"$haxe-absolute",
-				"$haxe",
-				"$haxe-error",
-				"$haxe-trace"
-			]
-		},
-		{
-			"label": "JS Client (debug)",
-			"type": "shell",
-			"command": "npx",
-			"args": [
-				"haxe",
-				"build.hxml",
-				"-js",
-				"export/run.js"
-			],
-			"problemMatcher": [
-				"$haxe-absolute",
-				"$haxe",
-				"$haxe-error",
-				"$haxe-trace"
-			]
-		},
-		{
-			"label": "C++ (debug)",
-			"type": "shell",
-			"command": "npx",
-			"args": [
-				"haxe",
-				"build.hxml",
-				"-cpp",
-				"export/cpp",
-				"-lib",
-				"hxcpp-debug-server"
-			],
-			"problemMatcher": [
-				"$haxe-absolute",
-				"$haxe",
-				"$haxe-error",
-				"$haxe-trace"
-			]
-		},
-		{
-			"label": "HL/JIT (debug)",
-			"type": "shell",
-			"command": "npx",
-			"args": [
-				"haxe",
-				"build.hxml",
-				"-hl",
-				"export/run.hl"
-			],
-			"problemMatcher": [
-				"$haxe-absolute",
-				"$haxe",
-				"$haxe-error",
-				"$haxe-trace"
-			]
-		}
-	]
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "haxe",
+      "args": "active configuration",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    },
+    {
+      "label": "Flash (debug)",
+      "type": "shell",
+      "command": "npx",
+      "args": ["haxe", "build.hxml", "-swf", "export/run.swf", "-D", "fdb"],
+      "problemMatcher": ["$haxe-absolute", "$haxe", "$haxe-error", "$haxe-trace"]
+    },
+    {
+      "label": "JS (debug)",
+      "type": "shell",
+      "command": "npx",
+      "args": ["haxe", "build.hxml", "-js", "export/run.js", "-lib", "hxnodejs"],
+      "problemMatcher": ["$haxe-absolute", "$haxe", "$haxe-error", "$haxe-trace"]
+    },
+    {
+      "label": "JS Client (debug)",
+      "type": "shell",
+      "command": "npx",
+      "args": ["haxe", "build.hxml", "-debug", "-D", "source-map-content"],
+      "problemMatcher": ["$haxe-absolute", "$haxe", "$haxe-error", "$haxe-trace"]
+    },
+    {
+      "label": "C++ (debug)",
+      "type": "shell",
+      "command": "npx",
+      "args": ["haxe", "build.hxml", "-cpp", "export/cpp", "-lib", "hxcpp-debug-server"],
+      "problemMatcher": ["$haxe-absolute", "$haxe", "$haxe-error", "$haxe-trace"]
+    },
+    {
+      "label": "HL/JIT (debug)",
+      "type": "shell",
+      "command": "npx",
+      "args": ["haxe", "build.hxml", "-hl", "export/run.hl"],
+      "problemMatcher": ["$haxe-absolute", "$haxe", "$haxe-error", "$haxe-trace"]
+    }
+  ]
 }
