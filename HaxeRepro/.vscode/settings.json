@@ -2,6 +2,7 @@
 	"haxe.configurations": [
 		{"label": "Neko", "args": ["build.hxml", "-neko", "export/run.n", "-cmd", "neko export/run.n"]},
 		{"label": "Flash", "args": ["build.hxml", "-swf", "export/run.swf", "-cmd", "cmd /C export\\run.swf"]},
+		{"label": "JavaScript Client", "args": ["build.hxml", "-lib", "hxnodejs"]},
 		{"label": "JavaScript", "args": ["build.hxml", "-js","export/run.js", "-lib", "hxnodejs", "-cmd", "node export/run.js"]},
 		{"label": "Python", "args": ["build.hxml", "-python", "export/run.py", "-cmd", "python3 export/run.py"]},
 		{"label": "C++", "args": ["build.hxml", "-cpp", "export/cpp", "-cmd", "cmd /C export\\cpp\\Main-debug.exe"]},
