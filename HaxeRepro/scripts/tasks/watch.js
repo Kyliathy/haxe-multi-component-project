@@ -2,12 +2,18 @@ const { sh } = require("tasksfile");
 
 const changeOpts = " -v -k -p 100 --await-write-finish 500 ";
 
-function start(options, gamemodule) {
-  game(gamemodule);
+function start(options, gamemodules) {
+  game(gamemodules);
 }
 
-function game(gamemodule) {
-  sh("onchange " + changeOpts + " ../" + gamemodule + "/source -- npx task watch:change:game", { async: true });
+function game(gamemodules) {
+  let modules = gamemodules.split(",");
+  let command = "onchange " + changeOpts;
+  for (const module of modules) {
+    command += "../" + module + "/source ";
+  }
+  command += " -- npx task watch:change:game";
+  sh(command, { async: true });
 }
 
 const change = {

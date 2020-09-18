@@ -4,11 +4,11 @@
   "description": "Client for the Haxe Multi Component project",
   "main": "index.js",
   "config": {
-    "gamemodule": "HaxeRepro"
+    "gamemodules": "HaxeRepro,Lib1,Lib2"
   },
   "scripts": {
     "task": "node scripts/tasksfile.js",
-    "watch": "npx cross-var task watch:start $npm_package_config_gamemodule",
+    "watch": "npx cross-var task watch:start $npm_package_config_gamemodules",
     "dev": "npx cross-var task dev:start"
   },
   "author": "Haxe Community",

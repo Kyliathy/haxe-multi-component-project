@@ -1,5 +1,5 @@
--cp ../Lib1
--cp ../Lib2
+-cp ../Lib1/source
+-cp ../Lib2/source
 -cp source
 -js export/run.js
--main Main
+-main Main  
