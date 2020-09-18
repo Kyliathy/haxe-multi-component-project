@@ -4,11 +4,14 @@
   "description": "Client for the Haxe Multi Component project",
   "main": "index.js",
   "config": {
-    "gamemodules": "HaxeRepro,Lib1,Lib2"
+    "gamemodules": "HaxeRepro,Lib1,Lib2",
+    "buildhxmlclient": "build.hxml",
+    "buildhxmlnode": "build-node.hxml"
   },
   "scripts": {
     "task": "node scripts/tasksfile.js",
-    "watch": "npx cross-var task watch:start $npm_package_config_gamemodules",
+    "watch": "npx cross-var task watch:start $npm_package_config_gamemodules $npm_package_config_buildhxmlclient",
+    "watch-node": "npx cross-var task watch:start $npm_package_config_gamemodules $npm_package_config_buildhxmlnode",
     "dev": "npx cross-var task dev:start"
   },
   "author": "Haxe Community",

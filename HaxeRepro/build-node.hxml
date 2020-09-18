@@ -1,0 +1,6 @@
+-cp ../Lib1/source
+-cp ../Lib2/source
+-cp source
+-lib hxnodejs 
+-js export/main.js
+-main MainNode

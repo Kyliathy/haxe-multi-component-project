@@ -20,7 +20,7 @@
       "label": "JS (debug)",
       "type": "shell",
       "command": "npx",
-      "args": ["haxe", "build.hxml", "-js", "export/run.js", "-lib", "hxnodejs"],
+      "args": ["haxe", "build-node.hxml"],
       "problemMatcher": ["$haxe-absolute", "$haxe", "$haxe-error", "$haxe-trace"]
     },
     {
