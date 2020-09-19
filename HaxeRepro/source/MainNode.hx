@@ -1,6 +1,9 @@
 import js.Node.console;
 import luxon.DateTime;
 
+// IMPORTANT: use dts2hx on luxon, express and source-map-support.
+// More details here: https://github.com/haxiomic/dts2hx
+// Entry point.
 class MainNode {
 	static var i:Int = 0;
 
