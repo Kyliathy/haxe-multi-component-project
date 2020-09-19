@@ -1,6 +1,9 @@
 -cp ../Lib1/source
 -cp ../Lib2/source
 -cp source
--lib hxnodejs 
+--library hxnodejs
+--library luxon
+--library express
+--library source-map-support
 -js export/main.js
 -main MainNode
