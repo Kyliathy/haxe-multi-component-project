@@ -18,14 +18,15 @@
       "outFiles": ["${workspaceFolder}/export/*.js"]
     },
     {
-      "name": "Attach to Nodexus",
+      "name": "Attach to Node (HMCP)",
       "type": "node",
       "request": "attach",
       "restart": true,
-      "port": 9229
+      "port": 9229,
+      "outFiles": ["${workspaceFolder}/export/*.js"]
     },
     {
-      "name": "JavaScript Client",
+      "name": "JavaScript Client (HMCP)",
       "type": "chrome",
       "url": "localhost:8080",
       "request": "launch",

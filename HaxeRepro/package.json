@@ -1,11 +1,11 @@
 {
-  "name": "hmc-client",
-  "version": "0.0.1",
-  "description": "Client for the Haxe Multi Component project",
+  "name": "haxe-multi-component-project",
+  "version": "0.1.0",
+  "description": "Demonstrates different ways of working with Haxe, using different targets and workflows.",
   "main": "index.js",
   "config": {
     "gamemodules": "HaxeRepro,Lib1,Lib2",
-    "buildhxmlclient": "build.hxml",
+    "buildhxmlclient": "build-client.hxml",
     "buildhxmlnode": "build-node.hxml"
   },
   "scripts": {

@@ -1,6 +1,6 @@
 import js.Browser;
 
-class Main {
+class MainClient {
 	static function main() {
 		trace("test");
 		var a:Int = 4;
@@ -10,7 +10,7 @@ class Main {
 		c = c * 4;
 		c = c / 3;
 
-		var h:Human = new Human("Bob", 11, false, "Fisherman");
+		var h:Human = new Human("Bob1", 11, false, "Fisherman");
 
 		// Browser.alert();
 		Browser.document.write("</br>Result is " + c + "\r\nHuman is: " + h);

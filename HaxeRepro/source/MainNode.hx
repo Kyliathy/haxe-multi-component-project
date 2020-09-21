@@ -16,7 +16,7 @@ class MainNode {
 
 			var h:Human = new Human("Bob", 11, false, "Fisherman");
 
-			console.log("hai salut because url was " + request.url);
+			console.log("Got a Standard HTTP Server request from URL: " + request.url);
 			response.end("Hello Human " + h);
 		});
 
@@ -26,12 +26,15 @@ class MainNode {
 		// Put a console.log on the terminal
 		trace("Server running at 127.0.0.1:8000");
 
+		// Starting an Express server too!
+
 		var app = Express.call();
 		var port = 3000;
 		app.get('/', (req, res, next) -> {
-			var h:Human = new Human("Bob", 11, false, "Fisherman");
-			var cucu:DateTime = DateTime.local();
-			res.send('Hellossz Worlda!  ' + h + " on1 " + cucu.minute);
+			var human:Human = new Human("Bob", 11, false, "Fisherman");
+			var luxon:DateTime = DateTime.local();
+			console.log("Got an Express Server request from URL: " + req.url);
+			res.send('Hello World! Here is Human ' + human + " at Luxon Minute: " + luxon.minute);
 		});
 		app.listen(port, () -> trace('Example app listening at http://localhost:${port}'));
 	}

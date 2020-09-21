@@ -2,4 +2,4 @@
 -cp ../Lib2/source
 -cp source
 -js export/run.js
--main Main  
+-main MainClient
