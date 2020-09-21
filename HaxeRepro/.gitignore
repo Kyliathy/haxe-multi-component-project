@@ -1,4 +1,5 @@
-.haxelib
+.haxelib/*
+!.haxelib/cors
 dump
 export/*.js
 export/*.map
