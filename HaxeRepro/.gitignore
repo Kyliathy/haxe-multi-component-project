@@ -1,5 +1,6 @@
 .haxelib
 dump
-export
+export/*.js
+export/*.map
 display/output.log
 node_modules
