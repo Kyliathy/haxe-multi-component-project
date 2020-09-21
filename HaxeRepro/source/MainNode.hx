@@ -1,3 +1,4 @@
+import cors.Cors.HowToMapThis;
 import js.Node.console;
 import luxon.DateTime;
 
@@ -29,6 +30,11 @@ class MainNode {
 		// Starting an Express server too!
 
 		var app = Express.call();
+
+		var howToInstantiate:HowToMapThis;
+		var thisDoesntWork = howToInstantiate.e();
+		app.use(thisDoesntWork); // I'm so close! Or?
+
 		var port = 3000;
 		app.get('/', (req, res, next) -> {
 			var human:Human = new Human("Bob", 11, false, "Fisherman");

@@ -3,6 +3,7 @@
 -cp source
 --library hxnodejs
 --library luxon
+--library cors
 --library express
 --library source-map-support
 -js export/main.js
