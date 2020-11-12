@@ -7,4 +7,4 @@
 
 start cmd /k haxe -v --wait 6060
 start cmd /k npm run watch-node
-
+cd export & start cmd /k start-node.bat

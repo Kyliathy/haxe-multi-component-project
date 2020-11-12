@@ -13,6 +13,6 @@ class MainClient {
 		var h:Human = new Human("Bob1", 11, false, "Fisherman");
 
 		// Browser.alert();
-		Browser.document.write("</br>Result is " + c + "\r\nHuman is: " + h);
+		Browser.document.write("</br>Result12 is " + c + "\r\nHuman is: " + h);
 	}
 }

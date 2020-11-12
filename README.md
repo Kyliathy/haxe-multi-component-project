@@ -1,25 +1,15 @@
 # Haxe Multi Component Project
 
-A repository that demonstrates multiple Tech Stacks using Haxe.
+Hello and welcome, Haxe pilgrim.
 
-The ideal editor for using this is VS Code, and we've provided here launch configurations for it, based on the explored Tech Stacks. Load the `HaxeMulti.code-workspace` and enjoy!
+This repository is a (slowly) evolving living example of how to use various tech stacks with Haxe.
 
-The project is focused on:
+It has been built starting from Gama11's excellent repository for reproducing Haxe compiler issues, which I also warmly recommend as it supports more targets. 
 
-- Smooth workflow via `Live Reload` & `Watch`
-- Using internal libraries.
-- Using external libraries.
+https://github.com/Gama11/HaxeRepro
 
-# JavaScript Client Application
+While this repository currently only supports the JavaScript target, it provides an example for a complete workflow for developing both Client and Server applications using Haxe.
 
-- Switch the `Haxe Configuration` to `build-client.hxml`. How? Down in the `Status Bar`, next to `Haxe`, you will see `Neko` as `Current Configuration`. Click there and change it to `build-client.hxml`. Note that you might have to scroll down in the popup list because there are a lot of configurations in this project.
-- You can use it in two ways:
-  - Launch `start-javascript-client-with-watch-and-live-reload.bat` in `HaxeRepro`. This will launch the project in **Live Reload Mode**. You are stuck with the Chrome debugger in this case.
-  - Launch a debug session by choosing to run `JavaScript Client (HMCP)`. This has no Live Reload nor Watch, but allows you to debug in VS Code.
+The main strength of this workflow is its Live Reload capabilities, which have been contributed to by https://github.com/lbergman of Hacksaw Studios.
 
-# JavaScript Server Application (Node JS)
-
-- Switch the `Haxe Configuration` to `build-node.hxml`. How? Down in the `Status Bar`, next to `Haxe`, you will see `Neko` as `Current Configuration`. Click there and change it to `build-node.hxml`. Note that you might have to scroll down in the popup list because there are a lot of configurations in this project.
-- You can use it in two ways:
-  - Launch `start-javascript-node-with-watch.bat` in `HaxeRepro`. This will launch the project in **Watch Mode**. You are stuck with the Chrome debugger in this case.
-  - Launch a debug session by choosing to run `Attach to Node (HMCP)`. This has no Watch, but allows you to debug in VS Code.
+Now please go in `/HaxeRepro` and read the readme.md there :).

@@ -1,9 +1,8 @@
-import cors.Cors.HowToMapThis;
+import cors.Cors;
 import js.Node.console;
 import luxon.DateTime;
 
-// IMPORTANT: use dts2hx on luxon, express and source-map-support.
-// More details here: https://github.com/haxiomic/dts2hx
+// IMPORTANT: read readme.md regarding installing dependencies.
 // Entry point.
 class MainNode {
 	static var i:Int = 0;
@@ -29,11 +28,10 @@ class MainNode {
 
 		// Starting an Express server too!
 
-		var app = Express.call();
-
-		var howToInstantiate:HowToMapThis;
-		var thisDoesntWork = howToInstantiate.e();
-		app.use(thisDoesntWork); // I'm so close! Or?
+		// Express creation.
+		var app:express_serve_static_core.Express = Express.call();
+		// Enable CORS.
+		app.use(Corsifier.call());
 
 		var port = 3000;
 		app.get('/', (req, res, next) -> {

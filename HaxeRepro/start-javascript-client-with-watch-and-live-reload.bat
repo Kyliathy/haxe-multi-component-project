@@ -8,4 +8,4 @@
 start cmd /k haxe -v --wait 6060
 start cmd /k npm run watch
 start cmd /k npm run dev
-
+cd export & start cmd /k start-client-server.bat
